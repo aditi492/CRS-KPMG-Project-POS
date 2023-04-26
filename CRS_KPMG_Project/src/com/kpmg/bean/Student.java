@@ -13,6 +13,15 @@ public class Student {
 			
 	}
 	
+	public static Student student = new Student();
+	public Student (String fN, String lN, String usn, String psw, ArrayList<String> courses) {
+		this.firstName = fN;
+		this.lastName = lN;
+		this.username = usn;
+		this.password = psw;
+		Student.registeredCourses = courses;
+	}
+	
 	public static ArrayList<String> registeredCourses = new ArrayList<String>();
 	/**
 	 * @return the registeredCourses
